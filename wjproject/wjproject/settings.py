@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'rest_framework'
 ]
 
+# se permiten todas puesto que no es producción
 CORS_ORIGIN_ALLOW_ALL = True
 
 MIDDLEWARE = [

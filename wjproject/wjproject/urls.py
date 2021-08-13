@@ -19,5 +19,7 @@ from django.conf.urls import url, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    # Se adicionan nuestras urls a las principales
     url(r'^', include('CreditCardValidator.urls'))
 ]

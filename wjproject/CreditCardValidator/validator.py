@@ -1,3 +1,5 @@
+# Funciones validadoras para cada una de las franquicias crediticias más conocidas
+
 def isAmericanExpress(cardNumber: str) -> bool:
     if len(cardNumber) != 15: return False
     elif cardNumber[:2] not in ["34", "37"]: return False
