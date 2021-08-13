@@ -1,8 +1,9 @@
 import React from 'react';
+import style from './Info.module.css';
 
 const Info = ({info}) => {
     return (
-        <div>
+        <div className={style.container} >
             {/* Valida si hay respuesta y la renderiza */}
             {
                 info && <div>

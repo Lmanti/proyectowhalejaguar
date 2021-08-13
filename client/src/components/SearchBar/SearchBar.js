@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Info from '../Info/Info';
+import style from './SearchBar.module.css'
 
 //Valida el input
 const validate = (input) => {
@@ -32,6 +33,9 @@ const SearchBar = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
 
+        // Restricción si hay error
+        if (errors.search) return
+
         // Fetch al back
         return fetch("http://127.0.0.1:8000/validator/", {
             method: 'POST',
@@ -46,19 +50,19 @@ const SearchBar = () => {
     }
 
 
-    console.log(errors)
+    console.log(errors.search)
 
     return (
-        <div>
+        <div className={style.container} >
             {/* Renderiza el fromulario */}
-            <form onSubmit={handleSubmit} >
-                <input type="text" value={input} onChange={handleInput} id="search" ></input>
-                <button>Validar</button>
+            <form onSubmit={handleSubmit} className={style.form} >
+                <input type="text" value={input} onChange={handleInput} id="search" className={`${style.input} ${errors.search && style.inputError}`} ></input>
+                <button className={style.button} >Validar</button>
             </form>
 
             {/* Renderiza un error si el usuario ingresa un dato no aceptado */}
             {
-                errors.search && <p>{errors.search}</p>
+                errors.search && <p className={style.error} >{errors.search}</p>
             }
 
             {/* Renderiza el resultado de la consulta */}

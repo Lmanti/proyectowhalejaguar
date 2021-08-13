@@ -1,0 +1,76 @@
+.container {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 1920px) {
+    .container {
+        position: relative;
+        top: 22%;
+        width: 100%;
+        text-align: center;
+        font-size: large;
+    }
+}
+
+@media (max-width: 1366px) {
+    .container {
+        position: relative;
+        top: 23%;
+        width: 100%;
+        text-align: center;
+        font-size: medium;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        position: relative;
+        top: 24%;
+        width: 100%;
+        text-align: center;
+        font-size: medium;
+    }
+}
+
+@media (max-width: 960px) {
+    .container {
+        position: relative;
+        top: 24%;
+        width: 100%;
+        text-align: center;
+        font-size: medium;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        position: relative;
+        top: 22%;
+        width: 100%;
+        text-align: center;
+        font-size: medium;
+    }
+}
+
+@media (max-width: 360px) {
+    .container {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        font-size: smaller;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        font-size: smaller;
+    }
+}

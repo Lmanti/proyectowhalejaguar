@@ -1,10 +1,9 @@
-
 import SearchBar from '../components/SearchBar/SearchBar';
-import './App.css';
+import style from './App.module.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className={style.app}>
       {/* Renderiza el componete search bar */}
       <SearchBar />
     </div>
